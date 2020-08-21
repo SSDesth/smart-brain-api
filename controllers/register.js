@@ -2,7 +2,8 @@
 const hanbleregister = (req, res,db, bcrypt) =>{
 	
 	const {email, password, name} = req.body;
-	console.log(db)
+	console.log(db('users')
+          .returning('*'));
 	if(!email || !name || !password){
 		return res.status(400).json('Incorrect form')
 	}
