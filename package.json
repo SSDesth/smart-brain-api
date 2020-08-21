@@ -1,9 +1,6 @@
 {
-  "name": "smart-brain-api",
+  "name": "node",
   "version": "1.0.0",
-  "engines": {
-    "node": "12.18.x"
-  },
   "main": "script.js",
   "scripts": {
     "start": "nodemon server.js"
@@ -12,13 +9,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    
-    "clarifai": "^2.9.1",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "knex": "^0.21.5",
-    "node-pre-gyp": "^0.15.0",
-    "nodemon": "^2.0.4",
-    "pg": "^8.3.2"
-  }
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "clarifai": "^2.5.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "knex": "^0.19.5",
+    "pg": "^7.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.7"
+  },
+  "description": ""
 }
