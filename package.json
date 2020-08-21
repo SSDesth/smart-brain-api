@@ -2,9 +2,7 @@
   "name": "smart-brain-api",
   "version": "1.0.0",
   "engines": {
-    "node": "12.18.x",
-    "npm": "6.x",
-    "bcrypt":"5.x"
+    "node": "12.18.x"
   },
   "main": "script.js",
   "scripts": {
@@ -14,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.0.0",
+    
     "clarifai": "^2.9.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
@@ -22,7 +20,5 @@
     "node-pre-gyp": "^0.15.0",
     "nodemon": "^2.0.4",
     "pg": "^8.3.2"
-  },
-  "devDependencies": {},
-  "description": ""
+  }
 }
