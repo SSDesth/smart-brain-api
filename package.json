@@ -1,6 +1,9 @@
 {
   "name": "smart-brain-api",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.18.3"
+  },
   "description": "",
   "main": "script.js",
   "scripts": {
@@ -18,8 +21,5 @@
     "node-pre-gyp": "^0.15.0",
     "nodemon": "^2.0.4",
     "pg": "^8.3.2"
-  },
-  "engines": {
-    "node": "12.18.3."
   }
 }
