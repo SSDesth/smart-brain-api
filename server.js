@@ -1,5 +1,5 @@
 const express = require('express');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt-nodejs');
 const cors = require('cors');
 const knex = require('knex');
 
@@ -20,8 +20,6 @@ const db = knex({
 
 const app =  express();
 
-const saltRounds = 10;
-
 app.use(express.json());
 app.use(cors());
 
@@ -37,12 +35,12 @@ app.use(cors());
 
 /* ======== Signin ======== */
 	app.post('/signin', (req,res)=>{
-		signin.hanbleSignin(req,res, db, bcrypt,saltRounds)
+		signin.hanbleSignin(req,res, db, bcrypt)
 	});
 
 /* ======== Register ======== */
 	app.post('/register',(req,res)=>{
-		register.hanbleregister(req,res, db, bcrypt,saltRounds)
+		register.hanbleregister(req,res, db, bcrypt)
 	});
 
 /* ======== Profile ======== */
