@@ -6,7 +6,7 @@ const hanbleregister = (req, res,db, bcrypt) =>{
 	if(!email || !name || !password){
 		return res.status(400).json('Incorrect form')
 	}
-	res.status(400).json(email, password, name)
+	res.status(400).json("email:",email, "pass:",password, "Name:",name)
 	const hash = bcrypt.hashSync(password);
 	
 	db.transaction(trx =>{
