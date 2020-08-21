@@ -26,9 +26,9 @@ const hanbleregister = (req, res,db, bcrypt) =>{
 				res.json(user[0]);
 			})
 			.then(trx.commit)
-			.catch(err=>res.status(400).json('Unable to Register!'))
+			.catch(err=>res.status(400).json('Unable to Register!'));
 		}).catch(err=>res.status(400).json('Unable to Register'));
-	})
+	})catch(err=>res.status(400).json('UUn error'));
 }
 module.exports={
 	hanbleregister:hanbleregister
