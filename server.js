@@ -56,7 +56,7 @@ app.use(cors());
 	});
 
 /* ======== Api ======== */
-app.post('/imageurl' , (req,res)=>{
-	console.log('test')
+	app.post('/imageurl' , (req,res)=>{
+		console.log('test')
 		image.handleApiCall(req,res)
 	});
