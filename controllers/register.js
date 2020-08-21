@@ -2,10 +2,11 @@
 const hanbleregister = (req, res,db, bcrypt) =>{
 	
 	const {email, password, name} = req.body;
-	
+	console.log('entre\n')
 	if(!email || !name || !password){
 		return res.status(400).json('Incorrect form')
 	}
+	console.log('Nombre: ',name,' email: ',email,'password: ' password)
 	const hash = bcrypt.hashSync(password);
     db.transaction(trx => {
       trx.insert({
