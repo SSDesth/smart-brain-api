@@ -17,6 +17,7 @@ const hanbleregister = (req, res,db, bcrypt) =>{
 		.into('login')
 		.returning('email')
 		.then(loginEmail =>{
+			res.status(400).json(loginEmail)
 			trx('users').returning('*')
 			.insert({
 				email:loginEmail[0],
