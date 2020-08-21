@@ -25,7 +25,7 @@ app.use(cors());
 
 /* ======== iniciar el server ========*/
 	app.get('/',(req,res) =>{
-		res.send(database.users);
+		res.send('it is working');
 	})
 
 

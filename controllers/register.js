@@ -1,5 +1,5 @@
 
-const hanbleregister = (req, res,db, bcrypt, saltRounds) =>{
+const hanbleregister = (req, res,db, bcrypt) =>{
 	
 	const {email, password, name} = req.body;
 	
